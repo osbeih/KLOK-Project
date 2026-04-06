@@ -1,0 +1,119 @@
+@import "../theme.css";
+
+.panel {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  border-radius: 16px;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.panel-container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+}
+
+.panel-container div {
+  display: grid;
+  justify-items: center;
+}
+
+.panel h2 {
+  color: white;
+  align-items: flex-end;
+}
+
+.container {
+  width: 100%;
+  height: 90vh;
+  max-width: 1128px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+}
+
+.form {
+  width: 100%;
+  height: 98%;
+  border-radius: 16px 16px 0 16px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-end;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  left: 30px;
+}
+
+.form-container {
+  display: grid;
+  padding: 20px;
+}
+
+.form h1,
+p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.title,
+.title-para {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+  padding: 10px;
+}
+
+.form-container {
+  display: grid;
+  gap: 4rem;
+}
+
+.inputs-container div {
+  display: flex;
+  gap: 10px;
+}
+
+.input-icon {
+  border: 1px solid silver;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.input {
+  width: 350px;
+}
+
+.MuiFormHelperText-root.Mui-error {
+  margin: 0;
+  padding: 0;
+  line-height: 0.5rem;
+  font-size: 10px;
+  position: absolute;
+  bottom: -15px;
+}
