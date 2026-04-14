@@ -1,0 +1,63 @@
+@import './theme.css';
+
+
+
+.sidebar {
+    height: 100vh;
+    background-color: var(--primary);
+}
+
+.sidebar img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100%;
+}
+
+.Klok-brand {
+    color: #0b1739;
+}
+
+.logo-container {
+    background: white;
+    border-radius: 10px 0 30px 0;
+    border-left: 5px solid var(--primary);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ebf2fa;
+
+}
+
+.dash-btn {
+    display: flex !important;
+    justify-content: start !important;
+    background-color: var(--primary) !important;
+    box-shadow: none !important;
+}
+
+.dash-btn:hover {
+    background-color: #1354b4 !important;
+}
+
+
+.grid-container {
+    width: 90%;
+    height: 600px;
+    border: 1px solid;
+    align-self: center;
+    align-items: center;
+    padding: 10px;
+}
+
+@media (max-width: 426px) {
+    .grid-container {
+        display: grid;
+    }
+}
