@@ -1,0 +1,15 @@
+.auth-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.auth-form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.auth-bottom-text {
+  text-align: center;
+  margin-top: 1rem;
+}

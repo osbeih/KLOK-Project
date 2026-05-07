@@ -1,5 +1,5 @@
-import Panel from "./panel";
-import Authentication from "./authentication";
+import Panel from "../panel/panel";
+import Authentication from "../auth/authentication";
 
 import { useState } from "react";
 

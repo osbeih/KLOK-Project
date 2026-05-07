@@ -1,0 +1,53 @@
+.appbar-box {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.appbar-root {
+  background-color: #ebf2fa !important;
+  box-shadow: none !important;
+  color: black !important;
+}
+
+.appbar-title {
+  flex-grow: 1;
+}
+
+.search-container {
+  position: relative;
+  border-radius: 4px;
+  /* default mui border radius */
+  background-color: white !important;
+  margin-left: 8px;
+  width: auto;
+}
+
+.search-icon-wrapper {
+  padding: 0 16px;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-input-root {
+  color: inherit;
+  width: 100%;
+}
+
+.search-input-inner {
+  padding: 8px 8px 8px 0 !important;
+  padding-left: calc(1em + 32px) !important;
+  transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 12ch;
+}
+
+.search-input-inner:focus {
+  width: 20ch !important;
+}
+
+.remaining-time-text {
+  font-size: 12px !important;
+}

@@ -1,0 +1,10 @@
+.panel-image {
+  width: 500px;
+}
+
+.panel-button {
+  width: 350px !important;
+  height: 40px !important;
+  background-color: white !important;
+  color: black !important;
+}

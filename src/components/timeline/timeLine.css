@@ -1,0 +1,7 @@
+.timeline-root {
+  padding: 0px !important;
+}
+
+.timeline-root .MuiTimelineOppositeContent-root {
+  flex: 0.2 !important;
+}

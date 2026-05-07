@@ -84,8 +84,6 @@ p {
 }
 
 .inputs-container {
-  display: flex;
-  flex-direction: column;
   gap: 20px;
   width: 400px;
   padding: 10px;

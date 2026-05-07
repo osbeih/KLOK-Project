@@ -3,19 +3,16 @@
 
 
 .sidebar {
-    height: 100vh;
     background-color: var(--primary);
+    height: 100vh;
+    position: sticky;
+    top: 0;
 }
 
 .sidebar img {
-    width: 30px;
+    width: 50px;
     height: 30px;
     margin: 0;
-}
-
-.dashboard-container {
-    display: flex;
-    height: 100%;
 }
 
 .Klok-brand {
@@ -43,21 +40,47 @@ body {
 }
 
 .dash-btn:hover {
-    background-color: #1354b4 !important;
+    background-color: white !important;
+    color: #0b1739;
 }
 
 
+.dash-typography {
+    line-height: 1.2 !important;
+
+}
+
+.icons {
+    height: 15px;
+    width: 15px;
+}
+
 .grid-container {
     width: 90%;
-    height: 600px;
-    border: 1px solid;
+    max-width: 1128px;
     align-self: center;
-    align-items: center;
     padding: 10px;
+}
+
+
+.grid-container .MuiGrid-root {
+    border-radius: 10px;
+
+}
+
+.grid-container .MuiGrid-root:first-child {
+    background-color: #4573b8;
+    height: 200px;
 }
 
 @media (max-width: 426px) {
     .grid-container {
         display: grid;
     }
+}
+
+
+.MuiSvgIcon-root {
+    height: 25px !important;
+    width: 25px !important;
 }

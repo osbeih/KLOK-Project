@@ -10,11 +10,14 @@ import LocaleProvider from './contexts/localeProvider';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <LocaleProvider>
-      <App />
-    </LocaleProvider>
+    <React.Suspense fallback={<div className="loading-screen">Loading...</div>}>
+      <LocaleProvider>
+        <App />
+      </LocaleProvider>
+    </React.Suspense>
   </React.StrictMode>
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

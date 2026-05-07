@@ -1,25 +1,21 @@
-// جلب كل المستخدمين المسجلين
 export const getUsers = () => {
     const users = localStorage.getItem("users");
     return users ? JSON.parse(users) : [];
 };
 
-// تسجيل مستخدم جديد
 export const registerUser = (userData) => {
     const users = getUsers();
 
-    // تحقق إذا الإيميل مسجل مسبقاً
     const exists = users.find((u) => u.email === userData.email);
     if (exists) {
-        return { success: false, message: "Email already exists" };
+        return { success: false, message: "emailAlreadyExists" };
     }
 
-    // أضف المستخدم الجديد
     const newUser = {
         id: Date.now(),
         fullName: userData.fullName,
         email: userData.email,
-        password: userData.password, 
+        password: userData.password,
     };
 
     users.push(newUser);
@@ -27,7 +23,6 @@ export const registerUser = (userData) => {
     return { success: true };
 };
 
-// تسجيل الدخول
 export const loginUser = (email, password) => {
     const users = getUsers();
 
@@ -36,21 +31,19 @@ export const loginUser = (email, password) => {
     );
 
     if (user) {
-        // خزّن المستخدم الحالي في session
         localStorage.setItem("currentUser", JSON.stringify(user));
         return { success: true, user };
     }
 
-    return { success: false, message: "Invalid email or password" };
+    return { success: false, message: "invalidEmailOrPassword" };
 };
 
-// تسجيل الخروج
-export const logoutUser = () => {
-    localStorage.removeItem("currentUser");
-};
 
-// جلب المستخدم الحالي
 export const getCurrentUser = () => {
     const user = localStorage.getItem("currentUser");
     return user ? JSON.parse(user) : null;
+};
+
+export const logoutUser = () => {
+    localStorage.removeItem("currentUser");
 };

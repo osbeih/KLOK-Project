@@ -1,4 +1,6 @@
-import "./style.css";
+
+import "../style.css";
+import "./panel.css";
 import { useTranslation } from "react-i18next";
 
 import Button from "@mui/material/Button";
@@ -11,21 +13,16 @@ export default function Panel({ isHaveAccount, setHaveAccount }) {
     <div className="panel">
 
       <div className="panel-container">
-        <div style={{}}>
-          <img style={{ width: "500px" }} src="/office.png" alt="Office workspace" />
+        <div>
+          <img className="panel-image" src="/office.png" alt="Office workspace" />
           <Button
-            sx={{
-              width: "350px",
-              height: "40px",
-              backgroundColor: "white",
-              color: "black",
-            }}
+            className="panel-button"
             onClick={() => {
               setHaveAccount((a) => !a);
             }}
             variant="contained"
           >
-            {isHaveAccount ? <>{t("Sign Up")}</> : <>{t("Login")}</>}
+            {isHaveAccount ? <>{t("signUp")}</> : <>{t("login")}</>}
           </Button>
         </div>
         <h2>KLOK</h2>

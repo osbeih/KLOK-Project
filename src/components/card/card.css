@@ -1,0 +1,18 @@
+.card-root {
+  min-width: 275px;
+  background-color: aliceblue !important;
+}
+
+.card-stack {
+  padding: 10px !important;
+}
+
+.card-icon-wrapper {
+  background-color: #c5cde9ff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.card-title {
+  color: blue !important;
+}
